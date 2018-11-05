@@ -12,4 +12,5 @@ function x = sust_atras(A,b)
     end
     x(i)=(b(i)-suma)/A(i,i);
   end
+  x = transpose(x);
 endfunction

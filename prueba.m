@@ -3,7 +3,7 @@ x = ones(11,1);
 b = matriz*x;
 t = cputime;
 
-[x,k] = jacobi(matriz,b,0*ones(11,1),15000,10^-7)
+[x,k] = gauss_seidel(matriz,b,0*ones(11,1),1500,10^-7)
 printf("\n")
 display("tiempo")
 display(cputime-t)
